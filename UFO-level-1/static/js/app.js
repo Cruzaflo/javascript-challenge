@@ -15,3 +15,6 @@ function populateTable(input) {
         })
     })
 }
+
+// populate table with the data
+populateTable(data)
