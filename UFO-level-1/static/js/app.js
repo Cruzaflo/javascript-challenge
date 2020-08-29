@@ -21,3 +21,16 @@ populateTable(data)
 
 //search box
 var button = d3.select("#filter-btn");
+
+button.on("click", function(){
+    d3.event.preventDefault()
+    var inputField = d3.select("#datetime")
+    var inputText = inputField.property("value")
+    console.log(inputText)
+    function filtered (object) {
+        return object.datetime == inputText
+    }
+    results = data.filter(filtered)
+    console.log(results)
+    populateTable(results, "tbody")
+})
