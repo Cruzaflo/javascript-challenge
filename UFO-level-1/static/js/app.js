@@ -5,7 +5,6 @@ console.log(data)
 
 var tableBody = d3.select("tbody")
 
-
 function populateTable(input) {
     tableBody.html("")
     input.forEach(function (entry) {
