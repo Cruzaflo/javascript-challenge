@@ -18,3 +18,6 @@ function populateTable(input) {
 
 // populate table with the data
 populateTable(data)
+
+//search box
+var button = d3.select("#filter-btn");
