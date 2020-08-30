@@ -8,7 +8,9 @@ data is added to the new row.
 
 The search filter function is called upon when the "filter table" button on the HTML page
 is clicked. Once that event occurs, the value of the input element is stored as a variable.
-That variable gets used for 
+That variable gets used in the filtered function for filtering. Only objects matching the the 
+input value will be returned. They are returned in the variable "results." These results are then 
+displayed on the HTML page using the populateTable function. 
 
 
 The data used was a collection of UFO sightings. 
